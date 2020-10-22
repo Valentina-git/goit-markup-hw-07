@@ -1,0 +1,45 @@
+.feature__list {
+	display: flex;
+}
+.feature__item::before {
+	display: block;
+	content: "";
+	margin-bottom: 30px;
+	border-radius: 4px;
+	height: 120px;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #f5f4fa;
+}
+.icon-antena::before {
+	background-image: url(../images/hw4/feature/antenna.svg);
+}
+.icon-clock::before {
+	background-image: url(../images/hw4/feature/clock.svg);
+}
+.icon-diagr::before {
+	background-image: url(../images/hw4/feature/diagr.svg);
+}
+.icon-astro::before {
+	background-image: url(../images/hw4/feature/astro.svg);
+}
+.feature__item {
+	flex-basis: calc((100% - 90px) / 4);
+}
+.feature__list .feature__item + .feature__item {
+	margin-left: 30px;
+}
+.feature__list .feature__title {
+	margin-bottom: 10px;
+	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+.feature__list .feature__indent {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+}
