@@ -10,7 +10,7 @@
 	background-position: center;
 	background-color: #2f303a;
 }
-.hero-container {
+.hero__container {
 	margin-left: auto;
 	margin-right: auto;
 	display: flexbox;
@@ -19,14 +19,14 @@
 	text-align: center;
 	letter-spacing: 0.06em;
 }
-.hero-title {
+.hero__title {
 	color: var(--primary-white-color);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	text-transform: uppercase;
 }
-.btn {
+.modal__btn {
 	transition: var(--transition);
 	margin-top: 30px;
 	border-radius: 4px;
@@ -44,8 +44,8 @@
 	line-height: 1.88;
 	letter-spacing: inherit;
 }
-.btn:hover,
-.btn:focus {
+.modal__btn:hover,
+.modal__btn:focus {
 	background-color: var(--primary-white-color);
 	color: var(--accent-color);
 }
@@ -55,7 +55,7 @@
 	padding-bottom: 94px;
 	padding-top: 94px;
 }
-.section-title {
+.section__title {
 	margin-top: 0;
 	margin-bottom: 50px;
 	text-align: center;
@@ -64,10 +64,10 @@
 	font-size: 36px;
 	line-height: 1.17;
 }
-.feature-list {
+.feature__list {
 	display: flex;
 }
-.feature-item::before {
+.feature__item::before {
 	display: block;
 	content: "";
 	margin-bottom: 30px;
@@ -90,13 +90,13 @@
 .icon-astro::before {
 	background-image: url(../images/hw4/feature/astro.svg);
 }
-.feature-item {
+.feature__item {
 	flex-basis: calc((100% - 90px) / 4);
 }
-.feature-list .feature-item + .feature-item {
+.feature__list .feature__item + .feature__item {
 	margin-left: 30px;
 }
-.feature-list .feature-title {
+.feature__list .feature__title {
 	margin-bottom: 10px;
 	color: var(--title-text-color);
 	font-weight: 700;
@@ -104,7 +104,7 @@
 	line-height: 1.14;
 	text-transform: uppercase;
 }
-.feature-list .feature-indent {
+.feature__list .feature__indent {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
@@ -114,17 +114,17 @@
 .plan {
 	padding-top: 0;
 }
-.plan-list {
+.plan__list {
 	display: flex;
 }
-.plan-item {
+.plan__item {
 	position: relative;
 	flex-basis: calc((100% - 60px) / 3);
 }
-.plan-list .plan-item + .plan-item {
+.plan__list .plan__item + .plan__item {
 	margin-left: 30px;
 }
-.plan-text {
+.plan__text {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -145,35 +145,35 @@
 .work {
 	background-color: #f5f4fa;
 }
-.work-list {
+.work__list {
 	display: flex;
 	text-align: center;
 }
-.work-item {
+.work__item {
 	flex-basis: calc((100% - 90px) / 4);
 	background-color: var(--primary-white-color);
 }
-.work-list .work-item + .work-item {
+.work__list .work__item + .work__item {
 	margin-left: 30px;
 }
-.work-list .work-item:hover {
+.work__list .work__item:hover {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
-.work-image {
+.work__image {
 	margin-bottom: 30px;
 }
-.work-title.work-indent {
+.work__title.work__indent {
 	font-size: 16px;
 	line-height: 1.19px;
 }
-.work-list .work-title {
+.work__list .work__title {
 	margin-bottom: 10px;
 	color: var(--title-text-color);
 	font-size: inherit;
 	font-weight: 500;
 }
-.work-list .work-indent {
+.work__list .work__indent {
 	margin-top: 0;
 	margin-bottom: 16px;
 	font-weight: 400;
@@ -215,13 +215,13 @@
 
 /* Постоянные клиенты  */
 
-.clients-section {
+.clients__section {
 	width: calc(100% - 180px) / 6;
 }
 .clients {
 	display: flex;
 }
-.clients-link {
+.clients__link {
 	transition: var(--transition);
 	display: flex;
 	width: 170px;
@@ -231,21 +231,21 @@
 	align-items: center;
 	fill: #afb1b8;
 }
-.clients-list__svg {
+.clients__svg {
 	transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-item {
+.clients__item {
 	justify-content: space-between;
 }
-.clients .clients-item + .clients-item {
+.clients .clients__item + .clients__item {
 	margin-left: 30px;
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
 	border-color: var(--accent-color);
 }
-.clients-link:hover .clients-list__svg,
-.clients-link:focus .clients-list__svg {
+.clients__link:hover .clients__svg,
+.clients__link:focus .clients__svg {
 	fill: var(--accent-color);
 }
 
@@ -283,7 +283,7 @@
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	background-color: #fff;
 }
-.close-modal {
+.modal__close {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -294,14 +294,14 @@
 	border-radius: 50%;
 	cursor: pointer;
 }
-.icon-cross {
+.modal__icon-cross {
 	width: 11px;
 	height: 11px;
 	background-size: contain;
 	fill: #000000;
 }
 
-.modal-text {
+.modal__text {
 	margin-bottom: 30px;
 	font-weight: 700;
 	font-size: 20px;
@@ -309,7 +309,6 @@
 	text-align: center;
 	color: var(--title-text-color);
 }
-
 .modal-form__field {
 	position: relative;
 	display: block;
