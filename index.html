@@ -26,7 +26,7 @@
           <span class="logo__accent-web">Web</span>Studio</a>
 
         <!-- Site  -->
-        <ul class="site-nav__list">
+        <ul class="site-nav__list page-header__site">
           <li class="site-nav__item">
             <a class="site-nav__link current link" href="./index.html">Студия</a></li>
           <li class="site-nav__item">
@@ -37,16 +37,18 @@
       </nav>
 
       <address class="address">
-        <ul class="site-contacts__list link">
+        <ul class="site-contacts__list page-header__site">
+          
           <li class="site-contacts__item">
             <a class="site-contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="site-contacts__icon-mail">
+              <svg class="site-contacts__icon-mail page-header__icon">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a> </li>
+
           <li class="site-contacts__item">
             <a class="site-contacts__link link" href="tel:+380961111111">
-              <svg class="site-contacts__icon-tell">
+              <svg class="site-contacts__icon-tell page-header__icon">
                 <use href="./images/sprite.svg#icon-tell"></use>
               </svg>
               +38 096 111 11 11</a> </li>
@@ -456,7 +458,8 @@
 
         <label class="modal-form__field">
           <span class="modal-form__text">Имя*</span>
-          <input class="modal-form__input" type="text" name="user_name" required minlength="2">
+          <input class="modal-form__input modal-form--style-gap " 
+                  type="text" name="user_name" required minlength="2">
           <svg class="modal-form__input-icon">
             <use href="./images/hw6/sprite-modal.svg#icon-name-figure"></use>
           </svg>
@@ -464,7 +467,8 @@
 
         <label class="modal-form__field">
           <span class="modal-form__text">Телефон*</span>
-          <input class="modal-form__input" type="tel" name="user_phone" required>
+          <input class="modal-form__input modal-form--style-gap" 
+                  type="tel" name="user_phone" required>
           <svg class="modal-form__input-icon">
             <use href="./images/hw6/sprite-modal.svg#icon-phone"></use>
           </svg>
@@ -472,7 +476,8 @@
 
         <label class="modal-form__field">
           <span class="modal-form__text">Почта*</span>
-          <input class="modal-form__input" type="email" name="user_mail" required>
+          <input class="modal-form__input modal-form--style-gap" 
+                  type="email" name="user_mail" required>
           <svg class="modal-form__input-icon">
             <use href="./images/hw6/sprite-modal.svg#icon-mail"></use>
           </svg>
@@ -480,11 +485,13 @@
 
         <label class="modal-form__field">
           <span class="modal-form__text">Комментарий</span>
-          <textarea class="modal-form__message" name="user_message" placeholder="Сообщение"></textarea>
+          <textarea class="modal-form__message modal-form--style-gap" 
+                    name="user_message" placeholder="Сообщение"></textarea>
         </label>
 
         <label class="modal-form__check-label">
-          <input class="modal-form__check-policy" type="checkbox" name="user_policy" value="accept-policy">
+          <input class="modal-form__check-policy" 
+                type="checkbox" name="user_policy" value="accept-policy">
           <svg class="custom-checkbox">
             <use href="./images/hw6/sprite-modal.svg#icon-check"></use>
           </svg>

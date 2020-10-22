@@ -1,46 +1,43 @@
-.site-nav__list,
-.site-contacts__list {
-	display: flex;
-	margin-left: 93px;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-}
-.site-contacts__list {
-	display: flex;
-	margin-right: auto;
-}
-.site-contacts__list .site-contacts__item + .site-contacts__item {
-	margin-left: 50px;
-}
-.site-contacts__list .site-contacts__link {
-	transition: var(--transition);
-	display: flex;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	color: var(--primary-text-color);
-}
+.site-contacts {
+	&__list {
+		margin-right: auto;
+	}
 
-.site-contacts__icon-mail,
-.site-contacts__icon-tell {
-	fill: currentColor;
-	width: 16px;
-	height: 12px;
-	margin-right: 10px;
-	background-size: contain;
-}
-.site-contacts__link:hover .site-contacts__icon-mail,
-.site-contacts__link:hover .site-contacts__icon-tell,
-.site-contacts__link:focus .site-contacts__icon-mail,
-.site-contacts__link:focus .site-contacts__icon-tell {
-	fill: var(--accent-color);
-}
+	&__icon-mail,
+	&__icon-tell {
+		fill: currentColor;
+		width: 16px;
+		height: 12px;
+		margin-right: 10px;
+		background-size: contain;
+	}
 
-.site-nav__link:hover,
-.site-nav__link:focus,
-.site-contacts__list .site-contacts__link:hover,
-.site-contacts__list .site-contacts__link:focus,
-.site-nav__list .site-nav__link.current {
-	color: var(--accent-color);
+	&__link {
+		&:hover .site-contacts__icon-mail,
+		&:hover .site-contacts__icon-tell,
+		&:focus .site-contacts__icon-mail,
+		&:focus .site-contacts__icon-tell {
+			fill: $accent-color;
+		}
+
+		.site-contacts__list &:hover,
+		.site-contacts__list &:focus,
+		.site-nav__list &.current {
+			color: $accent-color;
+		}
+
+		.site-contacts__list &__link {
+			transition: $transition;
+
+			padding-top: 32px;
+			padding-bottom: 32px;
+			color: $primary-text-color;
+		}
+	}
+
+	&__item {
+		.site-contacts__list & + & {
+			margin-left: 30px;
+		}
+	}
 }

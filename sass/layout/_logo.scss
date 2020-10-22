@@ -3,17 +3,20 @@
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
-	transition: var(--transition);
+	transition: $transition;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+
+	&__accent-web {
+		color: $accent-color;
+	}
 }
-.logo:hover,
-.logo:focus {
-	color: var(--accent-color);
-}
+
 .navigation__logo-header {
 	padding-top: 24px;
 	padding-bottom: 25px;
-	color: var(--title-text-color);
-}
-.logo__accent-web {
-	color: var(--accent-color);
+	color: $title-text-color;
 }
