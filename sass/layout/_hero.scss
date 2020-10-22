@@ -1,10 +1,11 @@
 .hero {
-	max-width: 1600px;
+	min-width: 1600px;
+	width: 100%;
 	padding-top: 200px;
 	padding-bottom: 200px;
 
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-		url(../images/hw4/hero/герой.jpg), url(../images/hw4/hero/Img\ Overlay.jpg), url(../images/hw4/hero/Bg.jpg);
+		url(../images/hw4/hero/герой.jpg);
 	background-size: cover;
 	background-position: center;
 	background-color: #2f303a;
