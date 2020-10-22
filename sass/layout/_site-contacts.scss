@@ -1,6 +1,7 @@
 .site-contacts {
 	&__list {
 		margin-right: auto;
+		display: flex;
 	}
 
 	&__icon-mail,
@@ -26,7 +27,7 @@
 			color: $accent-color;
 		}
 
-		.site-contacts__list &__link {
+		.site-contacts__list & {
 			transition: $transition;
 
 			padding-top: 32px;
