@@ -36,8 +36,14 @@
 	}
 
 	&__item {
-		.site-contacts__list & + & {
+		&:last-child {
 			margin-left: 30px;
 		}
 	}
 }
+
+// site-contacts__item {
+// 		width: calc(50% - 30px);
+// 		.site-contacts__list & + & {
+// 			margin-left: 30px;
+// 		}
